@@ -5,17 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".CreateTaskAdmin">
+    tools:context=".EditTaskAdmin">
+
+    <TextView
+        android:id="@+id/editTaskTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Task"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Description: Task Description"
+        android:text="Task Description:"
         android:textSize="20sp"
         android:layout_margin="16dp" />
 
     <EditText
-        android:id="@+id/task_description"
+        android:id="@+id/editTaskDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter task description"
@@ -30,7 +39,7 @@
         android:layout_margin="16dp" />
 
     <RadioGroup
-        android:id="@+id/radioGroupPriority"
+        android:id="@+id/editRadioGroupPriority"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -38,20 +47,19 @@
         android:layout_margin="16dp">
 
         <RadioButton
-            android:id="@+id/highPriority"
+            android:id="@+id/editHighPriority"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="High"
-            android:checked="true" />
+            android:text="High" />
 
         <RadioButton
-            android:id="@+id/mediumPriority"
+            android:id="@+id/editMediumPriority"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Medium" />
 
         <RadioButton
-            android:id="@+id/lowPriority"
+            android:id="@+id/editLowPriority"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Low" />
@@ -65,7 +73,7 @@
         android:layout_margin="16dp" />
 
     <DatePicker
-        android:id="@+id/datePicker"
+        android:id="@+id/editDatePicker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:calendarViewShown="false"
@@ -74,10 +82,10 @@
         android:layout_margin="16dp" />
 
     <Button
-        android:id="@+id/btn_task_assign"
+        android:id="@+id/editTaskButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create"
+        android:text="Save Changes"
         android:layout_gravity="center"
         android:layout_margin="16dp" />
 </LinearLayout>
