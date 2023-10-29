@@ -11,12 +11,14 @@ public class TaskModel {
     public TaskModel() {
     }
 
-    public TaskModel(String task_name, String task_id, String task_description, String priority, boolean isCompleted) {
+    public TaskModel(String task_name, String task_id, String task_description, String priority, String location ,boolean isCompleted, Date due_date) {
         this.task_name = task_name;
         this.task_id = task_id;
         this.task_description = task_description;
         this.priority = priority;
         this.isCompleted = isCompleted;
+        this.location = location;
+        this.due_date = due_date;
     }
 
     public String getTask_name() {
@@ -57,5 +59,22 @@ public class TaskModel {
 
     public void setComplted(boolean Completed) {
         isCompleted = Completed;
+    }
+
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public Date getDue_date() {
+        return due_date;
+    }
+
+    public void setDue_date(Date due_date) {
+        this.due_date = due_date;
     }
 }
